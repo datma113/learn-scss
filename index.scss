@@ -1,0 +1,77 @@
+$color1: #fcba03;
+$color2:#03fce3;
+
+
+.text1 {
+    color: blue;
+
+
+    .child-text1 {
+        color: red;
+    }
+
+    .child-text2 {
+        color: blue;
+        padding: 5px;
+        border: {
+            radius: 5px;
+            left: 5px solid black;
+            bottom: 2px solid red;
+            right: 6px solid green;
+        }
+    }
+}
+
+.ref-parent {
+    color: orange;
+    margin-top: 20px;
+    background-color: green;
+
+    &:hover {
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    &-text2 {
+        color: yellow;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.var-demo {
+    margin-top: 20px;
+    &-text1 {
+        color: $color1;
+    }
+    &-text2, &-text3 {
+        color: $color2;
+    }
+    &-text3 {
+        font: {
+            size: 25px;
+            weight: bold;
+        }
+    }
+}
+
+@mixin mixin-demo1($textColor, $borderColor){
+    font-size: 30px;
+    color: $textColor;
+    padding: 0 30px;
+    border: 1px dotted $borderColor;
+}
+
+.mixin-demo {
+    &1 {
+        @include mixin-demo1(orange, green);
+    }
+    &2 {
+        @include mixin-demo1(red, blue);
+    }
+    &3 {
+        @include mixin-demo1(purple, black);
+    }
+}

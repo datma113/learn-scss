@@ -1,0 +1,66 @@
+.text1 {
+  color: blue;
+}
+.text1 .child-text1 {
+  color: red;
+}
+.text1 .child-text2 {
+  color: blue;
+  padding: 5px;
+  border-radius: 5px;
+  border-left: 5px solid black;
+  border-bottom: 2px solid red;
+  border-right: 6px solid green;
+}
+
+.ref-parent {
+  color: orange;
+  margin-top: 20px;
+  background-color: green;
+}
+.ref-parent:hover {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+.ref-parent-text2 {
+  color: yellow;
+}
+.ref-parent-text2:hover {
+  color: black;
+}
+
+.var-demo {
+  margin-top: 20px;
+}
+.var-demo-text1 {
+  color: #fcba03;
+}
+.var-demo-text2, .var-demo-text3 {
+  color: #03fce3;
+}
+.var-demo-text3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mixin-demo1 {
+  font-size: 30px;
+  color: orange;
+  padding: 0 30px;
+  border: 1px dotted green;
+}
+.mixin-demo2 {
+  font-size: 30px;
+  color: red;
+  padding: 0 30px;
+  border: 1px dotted blue;
+}
+.mixin-demo3 {
+  font-size: 30px;
+  color: purple;
+  padding: 0 30px;
+  border: 1px dotted black;
+}
+
+/*# sourceMappingURL=index.css.map */
